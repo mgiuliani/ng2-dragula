@@ -69,10 +69,10 @@ export class DragulaService {
   }
 
   private handleModels(name: string, drake: any): void {
-    let dragElm:any;
-    let dragIndex:number;
-    let dropIndex:number;
-    let sourceModel:any;
+    let dragElm: any;
+    let dragIndex: number;
+    let dropIndex: number;
+    let sourceModel: any;
     let targetModel: any;
     let dropElmModel: any;
     drake.on('remove', (el:any, source:any) => {
@@ -89,7 +89,7 @@ export class DragulaService {
       dragElm = el;
       dragIndex = this.domIndexOf(el, source);
     });
-    drake.on('drop', (dropElm:any, target:any, source:any) => {
+    drake.on('drop', (dropElm: any, target: any, source: any) => {
       if (!drake.models || !target) {
         return;
       }
