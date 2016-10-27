@@ -75,7 +75,7 @@ export class DragulaService {
     let sourceModel: any;
     let targetModel: any;
     let dropElmModel: any;
-    drake.on('remove', (el:any, source:any) => {
+    drake.on('remove', (el: any, source: any) => {
       if (!drake.models) {
         return;
       }
@@ -85,7 +85,7 @@ export class DragulaService {
       // console.log(sourceModel);
       this.removeModel.emit([name, el, source]);
     });
-    drake.on('drag', (el:any, source:any) => {
+    drake.on('drag', (el: any, source: any) => {
       dragElm = el;
       dragIndex = this.domIndexOf(el, source);
     });
